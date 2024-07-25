@@ -8,10 +8,10 @@ import freecodecamp from "../../public/icons/freecodecamp.svg"
 export { dev, github, youtube, linkedin, codewars, freecodecamp }
 
 export const icons: IconType[] = [
-    { icon: dev, label: "dev.to" },
-    { icon: github, label: "github" },
-    { icon: youtube, label: "youtube" },
-    { icon: codewars, label: "codewars" },
-    { icon: linkedin, label: "linkedin" },
-    { icon: freecodecamp, label: "freecodecamp" },
+    { color: "#333333", icon: dev, label: "dev.to" },
+    { color: "#1A1A1A", icon: github, label: "github" },
+    { color: "#EE3939", icon: youtube, label: "youtube" },
+    { color: "#8A1A50", icon: codewars, label: "codewars" },
+    { color: "#2D68FF", icon: linkedin, label: "linkedin" },
+    { color: "#302267", icon: freecodecamp, label: "freecodecamp" },
 ]

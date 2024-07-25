@@ -3,9 +3,9 @@ import React from "react"
 
 type UserContextType = {
     error: string
-    data: UserType
+    data: null | UserType
     loading: boolean
-    setData: React.Dispatch<React.SetStateAction<UserType>>
+    setData: React.Dispatch<React.SetStateAction<null | UserType>>
 }
 
 const UserContext = React.createContext<null | UserContextType>(null)
@@ -19,7 +19,7 @@ export function useUserContext() {
 export default function UserProvider(props: { children: React.ReactNode }) {
     const [error, setError] = React.useState("")
     const [loading, setLoading] = React.useState(false)
-    const [data, setData] = React.useState<UserType>({})
+    const [data, setData] = React.useState<null | UserType>(null)
 
     return (
         <UserContext.Provider value={{ loading, error, data, setData }}>
